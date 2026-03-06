@@ -45,6 +45,10 @@ management:
     sampling:
       probability: 1.0
 
+notification:
+  service:
+    url: http://localhost:8083
+
 logging:
   level:
     org.hibernate.SQL: DEBUG
