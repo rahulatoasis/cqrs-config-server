@@ -3,8 +3,8 @@ server:
 
 spring:
   datasource:
-    #url: jdbc:postgresql://localhost:5432/inventorydb
-    url: jdbc:postgresql://host.docker.internal:5432/inventorydb
+    url: jdbc:postgresql://localhost:5432/inventorydb
+    #url: jdbc:postgresql://host.docker.internal:5432/inventorydb
     username: inventory
     password: inventory
     hikari:
@@ -30,8 +30,8 @@ spring:
     config:
       enabled: false
   kafka:
-    #bootstrap-servers: localhost:9092
-    bootstrap-servers: host.docker.internal:9092
+    bootstrap-servers: localhost:9092
+    #bootstrap-servers: host.docker.internal:9092
     consumer:
       group-id: import-group
       auto-offset-reset: earliest
