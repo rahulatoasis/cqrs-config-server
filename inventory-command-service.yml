@@ -3,7 +3,8 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/inventorydb
+    #url: jdbc:postgresql://localhost:5432/inventorydb
+    url: jdbc:postgresql://host.docker.internal:5432/inventorydb
     username: inventory
     password: inventory
     hikari:
